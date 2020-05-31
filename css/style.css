@@ -1,0 +1,645 @@
+/**Basic **/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lora", serif;
+  color: rgb(236, 32, 134);
+}
+
+.title {
+  margin-left: 45%;
+  color: rgb(202, 56, 129);
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Donegal One", serif;
+  display: block;
+}
+
+.section-border {
+  height: 10px;
+  background-color: rgb(202, 56, 129);
+  margin-left: 45%;
+  margin-bottom: 65px;
+  display: inline-block;
+}
+
+/** Basic End **/
+/** Live Background **/
+.banner-text {
+  width: 100%;
+  position: absolute;
+  font-family: "Donegal One", serif;
+}
+
+.banner-text ul {
+  height: 50px;
+  float: right;
+}
+
+.banner-text ul li {
+  display: inline-block;
+  padding: 40px 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+}
+
+.banner-text .titlemain {
+  text-align: center;
+  font-weight: bold;
+  color: pink;
+  font-size: 50px;
+  margin-top: 16%;
+}
+
+.banner-text .sub-title {
+  text-align: center;
+  color: pink;
+  font-size: 42px;
+  margin-top: 1%;
+}
+
+.animation-area {
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  width: 100%;
+  height: 100vh;
+}
+
+.box-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animates 20s linear infinite;
+  bottom: -180px;
+}
+
+.box-area li:nth-child(1) {
+  left: 76%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 9s;
+}
+
+.box-area li:nth-child(3) {
+  left: 71%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4) {
+  left: 40%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+
+.box-area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+
+.box-area li:nth-child(7) {
+  left: 6%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 0s;
+}
+
+.box-area li:nth-child(8) {
+  left: 25%;
+  width: 90px;
+  height: 90px;
+  animation-delay: 15.5s;
+}
+
+.box-area li:nth-child(9) {
+  left: 37%;
+  width: 85px;
+  height: 85px;
+  animation-delay: 10s;
+}
+
+.box-area li:nth-child(10) {
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 0s;
+}
+
+.box-area li:nth-child(11) {
+  left: 69%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 11s;
+}
+
+.box-area li:nth-child(12) {
+  left: 81%;
+  width: 210px;
+  height: 210px;
+  animation-delay: 0s;
+}
+
+@keyframes animates {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.highlight {
+  color: rgb(30, 174, 199);
+}
+
+.box-area li:hover {
+  background: rgba(245, 104, 104, 0.2);
+}
+
+/** Live Background End **/
+/**Menu**/
+.menu {
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  border-top: 1px solid pink;
+  border-bottom: 6px solid pink;
+  height: 57px;
+  width: 100%;
+  position: static;
+}
+
+.menu-item {
+  color: pink;
+}
+
+.menu-item:hover {
+  color: #bd8bd3;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 4.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-icon {
+    background-image: url("../images/menu-toggler.png");
+  }
+
+  .menu-item {
+    text-align: center;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to left, #8942a8, #ba382f);
+    border-left: 1px solid pink;
+    border-bottom: 1px solid pink;
+    border-right: 1px solid pink;
+    position: sticky;
+  }
+
+  .menu-item:first-child {
+    border-top: 1px solid pink;
+  }
+
+  .menu-item:hover {
+    background: rgb(231, 11, 121);
+  }
+}
+
+@media (min-width: 767px) {
+}
+
+.active {
+  color: #bd8bd3;
+}
+
+/** Menu End **/
+/** About **/
+
+#about {
+  height: 90px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about .section-border {
+  width: 146px;
+}
+
+.image-web-skills {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin-right: 3%;
+}
+
+.image-web-skills img {
+  margin-bottom: 17px;
+  display: inline-block;
+}
+
+.image-web-skills > p {
+  color: #b93831;
+}
+@media (max-width: 767px) {
+  .image-web-skills {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  .image-web-skills img {
+    margin-bottom: 17px;
+    display: inline-block;
+  }
+
+  .image-web-skills > p {
+    color: #b93831;
+  }
+}
+.all {
+  margin-bottom: 75px;
+}
+
+.skills {
+  margin: 5%;
+}
+
+.skills .me {
+  float: left;
+  width: 40%;
+  text-align: center;
+  margin-right: 10%;
+}
+
+.myself {
+  text-align: justify;
+}
+
+.myself > a {
+  text-align: center;
+}
+
+.skills > .me > img {
+  margin-bottom: 10px;
+}
+
+.skills > .me > h2 {
+  font-family: "Donegal One", serif;
+  color: rgb(219, 10, 167);
+}
+
+.skills > .me > p > a {
+  color: rgb(123, 11, 228);
+  text-align: center;
+}
+
+.skills > p > a:hover {
+  color: rgb(212, 23, 117);
+}
+
+.skill-name {
+  display: inline-block;
+}
+
+.progress {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  font-size: 17px;
+  font-family: "Donegal One", serif;
+  text-align: left;
+  padding-left: 5px;
+}
+@media (max-width: 767px) {
+  .skills {
+    margin: 5%;
+  }
+  .gridded {
+    display: grid;
+  }
+  .skills .me {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .myself {
+    text-align: justify;
+  }
+}
+@keyframes filling {
+  0% {
+    width: 0%;
+  }
+}
+
+/** About End **/
+/** Projects **/
+#projects {
+  height: 45px;
+}
+
+.project .section-border {
+  width: 156px;
+}
+
+.project-image {
+  text-align: center;
+}
+
+.projects-img {
+  width: 271px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.button {
+  padding: 7px 20px;
+  color: #000;
+  border: 1px solid pink;
+  transition: 1s;
+}
+
+.button:hover {
+  color: #fff;
+  background: rgb(212, 8, 104);
+}
+
+/** Projects End **/
+/** Blog **/
+#blog {
+  height: 45px;
+}
+
+.blog .section-border {
+  width: 88px;
+  display: block;
+}
+.blogging1,
+.blogging2,
+.blogging3 {
+  text-align: center;
+  font-family: "Lora", serif;
+  color: rgb(236, 32, 134);
+  transition: 0.3s ease-in;
+}
+
+.blogging1 > h3 {
+  font-family: "Donegal One", serif;
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(236, 32, 134);
+}
+
+.blogging2 > h3 {
+  font-family: "Donegal One", serif;
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(236, 32, 134);
+}
+
+.blogging3 > h3 {
+  font-family: "Donegal One", serif;
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(236, 32, 134);
+}
+
+.blogging1 .date {
+  font-size: 13px;
+  text-align: left;
+  font-family: consolas;
+  color: rgb(236, 32, 134);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(219, 16, 158);
+}
+
+.blogging2 .date {
+  font-size: 13px;
+  text-align: left;
+  font-family: consolas;
+  color: rgb(236, 32, 134);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(219, 16, 158);
+}
+
+.blogging3 .date {
+  font-size: 13px;
+  text-align: left;
+  font-family: consolas;
+  color: rgb(236, 32, 134);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(219, 16, 158);
+}
+
+.blogging1 > p {
+  text-align: left;
+  justify-content: left;
+  font-family: "Lora", serif;
+  color: rgb(236, 32, 134);
+}
+
+.blogging2 > p {
+  text-align: left;
+  justify-content: left;
+  font-family: "Lora", serif;
+  color: rgb(236, 32, 134);
+}
+
+.blogging3 > p {
+  text-align: left;
+  justify-content: left;
+  font-family: "Lora", serif;
+  color: rgb(236, 32, 134);
+}
+
+.container-of-blog {
+  width: 32%;
+  display: inline-block;
+  margin-right: 12px;
+}
+.container-of-blog:hover a {
+  text-decoration: none;
+}
+.cpp {
+  width: 145px;
+  display: inline-block;
+  margin-bottom: 20px;
+  opacity: 1;
+}
+
+.cp {
+  width: 348px;
+  height: 187px;
+  margin-bottom: 15px;
+  opacity: 1;
+}
+
+.escr {
+  width: 350px;
+  height: 188px;
+  margin-bottom: 14px;
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .blogging1,
+  .blogging2,
+  .blogging3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: "Lora", serif;
+    color: rgb(236, 32, 134);
+    transition: 0.3s ease-in;
+  }
+  .container-of-blog {
+    width: 100%;
+    display: block;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+/** Blog End **/
+/** Contact **/
+#contact {
+  height: 45px;
+}
+
+.contact {
+  background: rgb(236, 202, 240);
+  padding: 10px;
+}
+
+.contact > .section-border {
+  width: 155px;
+  margin-bottom: 14px;
+}
+
+.sub {
+  text-align: center;
+  font-size: 14px;
+}
+
+.btn {
+  background: rgb(233, 8, 165);
+}
+
+.www {
+  display: inline-block;
+}
+
+.form-control {
+  width: 60%;
+}
+
+form {
+  margin-left: 252px;
+}
+
+.sub {
+  margin-bottom: 40px;
+}
+
+/** Contact End **/
+/** Footer **/
+footer {
+  background: rgb(233, 151, 185);
+}
+
+footer {
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+/** Footer End **/
+@media (max-width: 767px) {
+  .title {
+    margin-left: 40%;
+  }
+  .section-border {
+    margin-left: 40%;
+  }
+  form {
+    margin-left: 7%;
+  }
+}
+@media (max-width: 1215px) and (min-width: 760px) {
+  .container-of-blog {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 58px;
+  }
+}
+@media (max-width: 985px) and (min-width: 775px) {
+  .image-web-skills {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  .image-web-skills img {
+    margin-bottom: 17px;
+    display: inline-block;
+  }
+
+  .image-web-skills > p {
+    color: #b93831;
+  }
+}
