@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Lora", serif;
   color: rgb(236, 32, 134);
+  overflow-x: hidden;
 }
 
 .title {
